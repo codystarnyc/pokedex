@@ -5,10 +5,13 @@
 
 .containergraph {
   position: absolute;
+  border: solid 1px pink;
+  border-radius:10%;
   height: 200px;
-  width: 375px;
+  width: 300px;
   margin: 0;
-  opacity:1;
+  background-color: lightblue;
+  opacity:.7;
 }
 
 .graph, .pika-bar, .bulb-bar, .char-bar, .jig-bar, .pika, .eye-left, .eye-right, .nose, .bulb, .bulb-top, .char, .jig, .hair {
