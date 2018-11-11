@@ -1,11 +1,14 @@
 
-
+.hidden{
+  opacity:0;
+}
 
 .containergraph {
   position: absolute;
   height: 200px;
   width: 375px;
   margin: 0;
+  opacity:1;
 }
 
 .graph, .pika-bar, .bulb-bar, .char-bar, .jig-bar, .pika, .eye-left, .eye-right, .nose, .bulb, .bulb-top, .char, .jig, .hair {
