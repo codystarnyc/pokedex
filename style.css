@@ -52,14 +52,14 @@ body {
   height: 30px;
   
 }
-/* .trainer {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.palkiaPanel {
+
+  width: 70%;
+  height: 70%;
+  position: relative;
   z-index: 2;
 
-} /*  */
+} 
 /* .centerimg {
   width:800px;
   height:600px;;
@@ -147,8 +147,8 @@ body {
   position: absolute;
   top:50px;
   display: flex;
-  padding: 10px;
-  background-color: rgba(255,255,255,0.8);
+  justify-content: center;
+
 }  
 #contentright p {
   flex: 1;

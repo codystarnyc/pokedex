@@ -2,8 +2,8 @@
 .wrapper {
   position: absolute;
   overflow: hidden;
-  width: 320px;
-  height: 220px; 
+  width: 310px;
+  height: 210px; 
   border: 1px solid black;
 }
 
