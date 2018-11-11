@@ -1,24 +1,202 @@
-/* Remove the navbar's default margin-bottom and rounded borders */ 
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-  }
-  
-  /* Add a gray background color and some padding to the footer */
-  footer {
-    background-color: #f2f2f2;
-    padding: 25px;
-  }
-  
-.carousel-inner img {
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-    min-height:200px;
+/* body{
+  background-color: black;
+  height: 500px;
+  width: 800px;
+  margin-top:30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: white;
+  background: url('pokedexbackgd1.jpg') center #333 no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+  opacity: 1;
+} */
+
+html {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+header{
+  margin-right: 20px;
+  float: center;
 }
 
-/* Hide the carousel text when the screen is less than 600 pixels wide */
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none; 
-  }
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
+
+body {
+  color: white;
+  font-family: 'Abel', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 20px;
+  /* margin-right: 10px; */
+  padding: 40px;
+  background-image: url("pokedexbackgd3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-clip: initial;
+  line-height: 1em;
+}
+
+
+.leading {
+  float: center;
+}
+.logo {
+  height: 30px;
+  
+}
+/* .trainer {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+
+} */
+/* .centerimg {
+  width:800px;
+  height:600px;;
+} */
+.palkia{
+  object-fit: cover;
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+    }
+ 
+
+  
+
+  /* Large Section */
+  #centermain {
+  /* margin-top: 30px; */
+  position:relative;
+  width:auto;
+  height:800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+#centermain h2 {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.8);
+}  
+#centermain p {
+  flex: 1;
+  display: flex;
+}
+#centermain img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}  
+ /* Content Left*/  
+#content {
+  margin-top: 130px;
+  /* padding:20px; */
+  /* margin-right: 20px; */
+  position:relative;
+  width:auto;
+  height:600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+/* #content h2 {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.8);
+}   */
+#content p {
+  flex: 1;
+  display: flex;
+}
+#content img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}  
+
+/* Content Right*/  
+#contentright {
+  margin-top: 130px;
+  /* padding:20px; */
+  position:relative;
+  width:auto;
+  height:600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+#contentright h2 {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.8);
+}  
+#contentright p {
+  flex: 1;
+  display: flex;
+}
+#contentright img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}  
+/* #content:before, 
+#content:after, 
+#content>:last-child:before, 
+#content>:last-child:after {
+    position: absolute;
+    width: 60px; 
+    height: 50px;
+    border-color: white; 
+    border-style: solid;
+    content: ' ';
+}
+ 
+#content:before {
+    top: 10px;
+    left: 10px;
+    border-width: 1px 0 0 1px
+}
+ 
+#content:after {
+    top: 10px;
+    right: 10px;
+    border-width: 1px 1px 0 0
+}
+ 
+#content>:last-child:before {
+    bottom: 10px;
+    right: 10px;     
+    border-width: 0 1px 1px 0
+}
+ 
+#content>:last-child:after {
+    bottom: 10px;
+    left: 10px;
+    border-width: 0 0 1px 1px
+} */
+
+/* .header {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  background-color: white;
+} */
