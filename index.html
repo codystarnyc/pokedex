@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokedex</title>
+  <!-- By Patrick Alcindor -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style2.css">
-  <style>
-    
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="style2.css" type="text/css">
+  <link rel="stylesheet" href="animate.css">
+  <!-- <link rel="stylesheet" href="style2.css"> -->
 </head>
+
 <body>
+  <header></header>
 
-  <div class="container">
-    <div class="graph"></div>
-    <div class="pika-bar"></div>
-    <div class="pika">
-      <div class="eye-left"></div>
-      <div class="eye-right"></div>
-      <div class="nose"></div>
-    </div>
-    <div class="bulb-bar"></div>
-    <div class="bulb-top"></div>
-    <div class="bulb">
-      <div class="eye-left"></div>
-      <div class="eye-right"></div>
-      <div class="nose"></div>
-    </div>
-    <div class="char-bar"></div>
-    <div class="char">
-      <div class="head"></div>
-      <div class="eye-left"></div>
-      <div class="eye-right"></div>
-      <div class="nose"></div>
-      <div class="belly"></div>
-    </div>
-    <div class="jig-bar"></div>
-    <div class="jig">
-      <div class="eye-left"></div>
-      <div class="eye-right"></div>
-      <div class="hair"></div>
-    </div>
-  </div>
 
+
+  <section class="main">
+<!-- 1st Column -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 nopadding">
+      <div id="contentleft">
+        <p><img src="right.png" /></p>
+        
+        <div id = "graph" class="trainer animated bounceInDown hidden"> <h2>Welcome To Patrick's Pokedex</h2><img class="trainer animated flip" src="pokemon-trainer.png" /></div>
+      </div>
+      
+    </div>
+
+<!-- 2nd Column -->
+        <div class="col-sm-6 nopadding">
+        <div id="centermain">
+          
+          <p><img class="centerimg" src="center.png" /></p>
+          <div class="palkia animated zoomInUp"> <img src="wild_palkia_appeared__by_twarda8-d9gso67.png" /></div>
+        </div>   
+      </div>
+<!-- 3rd Column   -->
+<div class="col-sm-3 nopadding">
+  <div id="contentright">
+    <div class="title animated bounceIn"><div class="palkiaPanel"><h2>Palkia's STATS</h2><img src="palkiasmallpanel.png"></div> </div>
+    <p><img src="right.png" /></p>
+    <div class="wrapper">
+      <div id="slide" class="containergraph">
+        <div class="graph"></div>
+        <div class="pika-bar"></div>
+        <div class="pika">
+          <div class="eye-left"></div>
+          <div class="eye-right"></div>
+          <div class="nose"></div>
+        </div>
+        <div class="bulb-bar"></div>
+        <div class="bulb-top"></div>
+        <div class="bulb">
+          <div class="eye-left"></div>
+          <div class="eye-right"></div>
+          <div class="nose"></div>
+        </div>
+        <div class="char-bar"></div>
+        <div class="char">
+          <div class="head"></div>
+          <div class="eye-left"></div>
+          <div class="eye-right"></div>
+          <div class="nose"></div>
+          <div class="belly"></div>
+        </div>
+        <div class="jig-bar"></div>
+        <div class="jig">
+          <div class="eye-left"></div>
+          <div class="eye-right"></div>
+          <div class="hair"></div>
+        </div>
+      </div>
+    </div>
+    
+       <!-- Graph inserted here -->
+        </div>
+      </div>
+      
+    </div>
+
+  </section>
+
+
+
+ 
+
+       
+ <script src="script.js"></script>   
 
 </body>
+
 </html>
