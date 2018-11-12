@@ -60,6 +60,16 @@ body {
   z-index: 2;
 
 } 
+.palkiaPanel h2 {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+  left:100px;
+  font-family:  'Roboto Slab', serif;
+  /* justify-content: right;
+  align-content: right; */
+  /* background-color: rgba(255,255,255,0.8); */
+}  
 /* .centerimg {
   width:800px;
   height:600px;;
@@ -118,9 +128,15 @@ body {
 #contentleft h2 {
   position: absolute;
   display: flex;
+  top:10;
   padding: 10px;
-  background-color: rgba(255,255,255,0.8);
+  /* background-color: rgba(255,255,255,0.8); */
 }  
+#contentleft img{
+  position: relative;
+  width: 50px;
+  Height:50px;;
+}
 #contentleft p {
   flex: 1;
   display: flex;
