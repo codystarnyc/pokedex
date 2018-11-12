@@ -4,7 +4,7 @@
   overflow: hidden;
   width: 310px;
   height: 210px; 
-  border: 1px solid black;
+  border: none;
 }
 
 #slide {
@@ -42,7 +42,30 @@
   background-color: lightblue;
   opacity:.7;
 }
-
+.speed{
+  left:50px;
+  position:absolute;
+  top:10px;
+  z-index:2;
+}
+.defense{
+  left:50px;
+  position:absolute;
+  top:10px;
+  z-index:2;
+}
+.attack{
+  left:50px;
+  position:absolute;
+  top:10px;
+  z-index:2;
+}
+.hp{
+  left:50px;
+  position:absolute;
+  top:10px;
+  z-index:2;
+}
 .graph, .pika-bar, .bulb-bar, .char-bar, .jig-bar, .pika, .eye-left, .eye-right, .nose, .bulb, .bulb-top, .char, .jig, .hair {
   position: absolute;
 }
@@ -66,7 +89,7 @@
 }
 
 .pika-bar {
-  width: 50%;
+  width: 10%;
   top: 10%;
   background: #f6e652;
   transition: width 1s ease-in-out;
@@ -86,6 +109,7 @@
   width: 15%;
   background: #f6e652;
 }
+
 .pika:before, .pika:after {
   position: absolute;
   top: 50%;
@@ -335,7 +359,7 @@
 }
 
 .jig-bar {
-  width: 30%;
+  width: 20%;
   top: 75%;
   background: #FAD0DE;
 }
