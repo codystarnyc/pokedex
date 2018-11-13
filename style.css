@@ -26,6 +26,9 @@ header{
   padding: 0 !important;
   margin: 0 !important;
 }
+.btn {
+  position: relative;
+}
 
 body {
   color: white;
@@ -64,6 +67,7 @@ body {
   position: absolute;
   display: flex;
   padding: 10px;
+  text-shadow: white;
   left:100px;
   font-family:  'Roboto Slab', serif;
   /* justify-content: right;
@@ -132,11 +136,7 @@ body {
   padding: 10px;
   /* background-color: rgba(255,255,255,0.8); */
 }  
-#contentleft img{
-  position: relative;
-  width: 50px;
-  Height:50px;;
-}
+
 #contentleft p {
   flex: 1;
   display: flex;
@@ -187,6 +187,39 @@ body {
   background-color: #4c2e34;
   outline: 0px solid #331b20;
 }
+#speed{
+  position:absolute;
+  z-index:4;
+  left:50px;
+}
+#hp {
+    position:absolute;
+    z-index:4;
+    left:50px;
+  }
+#defense{
+    position:absolute;
+    z-index:4;
+    left:50px;
+  }
+#attack{
+    position:absolute;
+    z-index:4;
+    left:50px;
+  }
+#ability{
+    position:absolute;
+    z-index:4;
+    left:50px;
+  }
+#showabilities{
+  position:absolute;
+    left: 20px;
+    top: 180px;
+  }
+
+
+  
 /* #content:before, 
 #content:after, 
 #content>:last-child:before, 
