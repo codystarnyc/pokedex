@@ -78,7 +78,7 @@ if (data.abilities[2] !== undefined) {
 }
 }
 
-   xhttp.open("GET", "http://fizal.me/pokeapi/api/v2/name/palkia.json", true);
+   xhttp.open("GET", "https://fizal.me/pokeapi/api/v2/name/palkia.json", true);
    xhttp.send();
 }
 
@@ -128,7 +128,7 @@ if (data.abilities[2] !== undefined) {
 }
 }
 
-   xhttp.open("GET", "http://fizal.me/pokeapi/api/v2/name/mewtwo.json", true);
+   xhttp.open("GET", "https://fizal.me/pokeapi/api/v2/name/mewtwo.json", true);
    xhttp.send();
 }
 
@@ -178,7 +178,7 @@ if (data.abilities[2] !== undefined) {
 }
 }
 
-   xhttp.open("GET", "http://fizal.me/pokeapi/api/v2/id/487.json", true);
+   xhttp.open("GET", "https://fizal.me/pokeapi/api/v2/id/487.json", true);
    xhttp.send();
 }
 

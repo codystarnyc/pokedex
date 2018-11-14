@@ -91,8 +91,8 @@ body {
 } */
 .palkia{
   object-fit: cover;
-  width: 70%;
-  height: 70%;
+  width: 75%;
+  height: 75%;
   position: absolute;
   z-index: 2;
     }
@@ -100,6 +100,14 @@ body {
   object-fit: cover;
   width: 60%;
   height: 60%;
+  position: absolute;
+  z-index: 2;
+    
+}
+#palk1{
+  object-fit: cover;
+  width: 70%;
+  height: 70%;
   position: absolute;
   z-index: 2;
     
