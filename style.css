@@ -14,20 +14,31 @@
 } */
 
 html {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   min-height: 100vh;
 }
 header{
   margin-right: 20px;
   float: center;
 }
-
+#pan{
+  position:absolute;
+  z-index:1;
+}
+#pan1{
+  position:absolute;
+  z-index:500;
+}
+#pan2{
+  position:absolute;
+  z-index:9999;
+}
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
 }
-.btn {
-  position: relative;
+btn {
+  position: absolute;
 }
 
 body {
@@ -80,34 +91,73 @@ body {
 } */
 .palkia{
   object-fit: cover;
-  width: auto;
-  height: auto;
+  width: 70%;
+  height: 70%;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
     }
+
+.mewtwo{
+      object-fit: cover;
+      width: 60%;
+      height: 60%;
+      position: absolute;
+      z-index: 3;
+        }
+.giratina{
+          object-fit: cover;
+          width: 60%;
+          height: 60%;
+          position: absolute;
+          z-index: 4;
+}  
  
 
+#portal{
+  position:absolute;
+  object-fit: cover;
+  left:0s;
+  width: 50%;
+  height: 50%;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+  }
   
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+
 
   /* Large Section */
   #centermain {
-  margin-top: 30px;
+  margin-top: 40px;
   position:relative;
   width:auto;
   height:800px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index:2;
+
   
   }
-#centermain h2 {
+/* #centermain h2 {
   position: absolute;
   display: flex;
   padding: 10px;
   background-color: rgba(255,255,255,0.8);
-}  
-#centermain p {
+}   */
+#centermain:first-child{
   flex: 1;
   display: flex;
 }
@@ -159,6 +209,7 @@ body {
   justify-content: center;
   z-index:1;
   }
+
 .title {
   position: absolute;
   top:50px;
@@ -166,10 +217,11 @@ body {
   justify-content: center;
 
 }  
-#contentright p {
+/* #contentright p {
+  background-image: url("right.png");
   flex: 1;
   display: flex;
-}
+} */
 #contentright img {
   object-fit: cover;
   width: 100%;
@@ -214,10 +266,15 @@ body {
   }
 #showabilities{
   position:absolute;
-    left: 20px;
-    top: 180px;
+    left: 60px;
+    top: 225px;
   }
-
+.pokecard{
+  position: absolute;
+  top:0px;
+  width:auto;
+  height:auto;
+}
 
   
 /* #content:before, 

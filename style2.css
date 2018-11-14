@@ -2,6 +2,7 @@
 .wrapper {
   position: absolute;
   overflow: hidden;
+  top:300px;
   width: 310px;
   height: 210px; 
   border: none;
@@ -87,7 +88,7 @@
   -moz-transition: width 1s ease-in-out;
   -o-transition: width 1s ease-in-out;
 }
-
+/* Palkia */
 .pika-bar {
   width: 55%;
   top: 10%;
@@ -100,6 +101,30 @@
 
 .pika-bar:hover {
   width: 90%;
+}
+
+/* MewTwo */
+.pika-barMew {
+  width: 72%;
+  top: 10%;
+  background: #f6e652;
+  transition: width 1s ease-in-out;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+}
+
+
+
+/* Giratina */
+.pika-barGir {
+  width: 50%;
+  top: 10%;
+  background: #f6e652;
+  transition: width 1s ease-in-out;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
 }
 
 .pika {
@@ -146,9 +171,22 @@
   border-radius: 50%;
   background: #292929;
 }
-
+/* Palkia */
 .char-bar {
   width: 67%;
+  top: 31%;
+  background: #ff9441;
+}
+
+/* MewTwo */
+.char-barMew {
+  width: 61%;
+  top: 31%;
+  background: #ff9441;
+}
+/* Giratina */
+.char-barGir {
+  width: 58%;
   top: 31%;
   background: #ff9441;
 }
@@ -234,9 +272,21 @@
 .char .eye-right:after {
   right: 60%;
 }
-
+/* Palkia */
 .bulb-bar {
   width: 50%;
+  top: 53%;
+  background: #5ADBBD;
+}
+/* MewTwo */
+.bulb-barMew {
+  width: 50%;
+  top: 53%;
+  background: #5ADBBD;
+}
+/* Giratina */
+.bulb-barGir {
+  width: 67%;
   top: 53%;
   background: #5ADBBD;
 }
@@ -357,9 +407,21 @@
   -moz-transform: rotate(20deg);
   transform: rotate(20deg);
 }
-
+/* Palkia */
 .jig-bar {
   width: 50%;
+  top: 75%;
+  background: #FAD0DE;
+}
+/* Mewtwo */
+.jig-barMew {
+  width: 58%;
+  top: 75%;
+  background: #FAD0DE;
+}
+/* Giratina */
+.jig-barGir {
+  width: 83%;
   top: 75%;
   background: #FAD0DE;
 }
