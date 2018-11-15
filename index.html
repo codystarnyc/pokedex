@@ -11,16 +11,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="stylesheet" href="style2.css" type="text/css">
-  <link rel="stylesheet" href="animate.css">
-  <!-- <link rel="stylesheet" href="style2.css"> -->
+  <link rel="stylesheet" href="master.css" type="text/css">
+  <link rel="stylesheet" href="css/style2.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+
 </head>
 
 <body>
   <header></header>
-
-
 
   <section class="main">
 <div class="container-fluid">
@@ -29,7 +27,7 @@
     <div class="col-sm-3 nopadding">
       <div id="contentleft">
         <p></p>
-        <div id = "graph" class="trainer animated bounceInDown hidden"> <h2>Welcome To Patrick's Pokedex</h2><img class="trainer animated flip" src="pokemon-trainer.png" /></div>
+        <div id = "graph" class="trainer animated flip hidden"> <h2>Welcome To Patrick's Pokedex</h2><img class="trainer animated flip" src="img/pokemon-trainer.png" /></div>
       </div>
       <button class="btn-default btn" id="myBtn" type="button">Palkia</button>
       <button class="btn-default btn" id="myBtn1" type="button">MewTwo</button>
@@ -40,22 +38,22 @@
         <div class="col-sm-6 nopadding">
         <div id="centermain">
           
-          <div><img id="centerimg" src="center.png" /></div>
-          <div id="portal"><img class="portal" src="portal.png" /></div>
+          <div><img id="centerimg" src="img/center.png"/></div>
+          <div id="portal"><img class="portal" src="img/portal.png" /></div>
   
-          <div id="palk" class="palkia animated zoomInUp hidden"> <img src="wild_palkia_appeared__by_twarda8-d9gso67.png" /></div>
-          <div id="palk1" class="mewtwo animated zoomInUp hidden"> <img src="mew2.png" /></div>
-          <div id="palk2" class="giratina animated zoomInUp hidden"> <img src="giratina1.png" /></div>
+          <div id="palk" class="palkia animated zoomInUp hidden"> <img src="img/wild_palkia_appeared__by_twarda8-d9gso67.png" /></div>
+          <div id="palk1" class="mewtwo animated zoomInUp hidden"> <img src="img/mew2.png" /></div>
+          <div id="palk2" class="giratina animated zoomInUp hidden"> <img src="img/giratina1.png" /></div>
         </div>   
       </div>
 <!-- 3rd Column   -->
 <div class="col-sm-3 nopadding">
   <div id="contentright">
-    <div id="pokecard"><img class="pokecard animated flip" src="pokecard.png"></div>
-    <div id="pan" class="title animated swing hidden"><div id="pPanel" class="palkiaPanel"><h2>Palkia's STATS</h2><img src="palkiasmallpanel.png"></div> </div>
-    <div id="pan1" class="title animated swing hidden"><div id="pPanel1" class="palkiaPanel"><h2>Mewtwo's STATS</h2><img src="mewtwosmallpanel.png"></div> </div>
-    <div id="pan2" class="title animated swing hidden"><div id="pPanel2" class="palkiaPanel"><h2>Giratina's STATS</h2><img src="giratinasmallpanel.png"></div> </div>
-    <p><img src="right.png"/></p>
+    <div id="pokecard"><img class="pokecard animated flip" src="img/pokecard.png"></div>
+    <div id="pan" class="title animated swing hidden"><div id="pPanel" class="palkiaPanel"><h2>Palkia's STATS</h2><img src="img/palkiasmallpanel.png"></div> </div>
+    <div id="pan1" class="title animated swing hidden"><div id="pPanel1" class="palkiaPanel"><h2>Mewtwo's STATS</h2><img src="img/mewtwosmallpanel.png"></div> </div>
+    <div id="pan2" class="title animated swing hidden"><div id="pPanel2" class="palkiaPanel"><h2>Giratina's STATS</h2><img src="img/giratinasmallpanel.png"></div> </div>
+    <p><img src="img/right.png"/></p>
     <div id="showabilities"></div>
     <div id="wrap" class="wrapper">
       <div id="slide" class="containergraph hidden">
@@ -100,152 +98,11 @@
 
     </div>
     
-<!-- Graph2
-<div id="wrap1" class="wrapper hidden">
-    <div id="slide" class="containergraph hidden">
-      <div class="graph"></div>
-      <div class="pika-barMew">
-        <div id="speed"></div>
-      </div>
-      <div class="pika">
-        <div class="eye-left"></div>
-        <div class="eye-right"></div>
-        <div class="nose"></div>
-      </div>
-      <div class="bulb-barMew">
-          <div id="defense"></div>
-      </div>
-      <div class="bulb-top"></div>
-      <div class="bulb">
-        <div class="eye-left"></div>
-        <div class="eye-right"></div>
-        <div class="nose"></div>
-      </div>
-      <div class="char-barMew ">
-          <div id="attack"></div>
-      </div>
-      <div class="char">
-        <div class="head"></div>
-        <div class="eye-left"></div>
-        <div class="eye-right"></div>
-        <div class="nose"></div>
-        <div class="belly"></div>
-      </div>
-      <div class="jig-barMew">
-          <div id="hp"></div>
-      </div>
-      <div class="jig">
-        <div class="eye-left"></div>
-        <div class="eye-right"></div>
-        <div class="hair"></div>
-      </div>
-      
-    </div> 
 
-  </div> -->
-
-  <!-- Show Girantina
-
-  <div id="wrap2" class="wrapper">
-      <div id="slide" class="containergraph hidden">
-        <div class="graph"></div>
-        <div class="pika-barGir">
-          <div id="speed"></div>
-        </div>
-        <div class="pika">
-          <div class="eye-left"></div>
-          <div class="eye-right"></div>
-          <div class="nose"></div>
-        </div>
-        <div class="bulb-barGir">
-            <div id="defense"></div>
-        </div>
-        <div class="bulb-top"></div>
-        <div class="bulb">
-          <div class="eye-left"></div>
-          <div class="eye-right"></div>
-          <div class="nose"></div>
-        </div>
-        <div class="char-barGir">
-            <div id="attack"></div>
-        </div>
-        <div class="char">
-          <div class="head"></div>
-          <div class="eye-left"></div>
-          <div class="eye-right"></div>
-          <div class="nose"></div>
-          <div class="belly"></div>
-        </div>
-        <div class="jig-barGir">
-            <div id="hp"></div>
-        </div>
-        <div class="jig">
-          <div class="eye-left"></div>
-          <div class="eye-right"></div>
-          <div class="hair"></div>
-        </div>
-        
-      </div> 
-
-    </div> -->
 
         </div>
       </div>
-<!--       
-      <div id="contentright2" class="hidden">
-          <div id="pan" class="title animated swing hidden"><div class="palkiaPanel"><h2>Palkia's STATS</h2><img src="palkiasmallpanel.png"></div> </div>
-          <p><img src="right.png"/></p>
-          <div id="showabilities"></div>
-          <div class="wrapper">
-            <div id="slide" class="containergraph hidden">
-              <div class="graph"></div>
-              <div class="pika-bar">
-                <div id="speed"></div>
-              </div>
-              <div class="pika">
-                <div class="eye-left"></div>
-                <div class="eye-right"></div>
-                <div class="nose"></div>
-              </div>
-              <div class="bulb-bar">
-                  <div id="defense"></div>
-              </div>
-              <div class="bulb-top"></div>
-              <div class="bulb">
-                <div class="eye-left"></div>
-                <div class="eye-right"></div>
-                <div class="nose"></div>
-              </div>
-              <div class="char-bar">
-                  <div id="attack"></div>
-              </div>
-              <div class="char">
-                <div class="head"></div>
-                <div class="eye-left"></div>
-                <div class="eye-right"></div>
-                <div class="nose"></div>
-                <div class="belly"></div>
-              </div>
-              <div class="jig-bar">
-                  <div id="hp"></div>
-              </div>
-              <div class="jig">
-                <div class="eye-left"></div>
-                <div class="eye-right"></div>
-                <div class="hair"></div>
-              </div>
-              
-            </div> 
-      
-      
-      
-      
-          </div>
-          
-            
-          
-              </div>
-            </div> -->
+
 
 
     </div>
@@ -257,7 +114,7 @@
  
 
        
- <script src="script.js"></script>   
+ <script src="js/script.js"></script>   
 
 </body>
 

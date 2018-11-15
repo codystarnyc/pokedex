@@ -1,0 +1,396 @@
+
+
+$pika-yellow: #f6e652;
+$pika-red: #c52018;
+$bulb-blue: #5ADBBD;
+$bulb-pink: #DD2561;
+$bulb-green: #8ADD56;
+$char-orange: #ff9441;
+$char-teal: #158789;
+$jig-pink: #FAD0DE;
+$jig-blue: #5DADE2;
+$black: #292929;
+$gray: lighten($black, 70%);
+$dark-gray: #273746;
+
+@mixin rotate($deg) {
+   -ms-transform: rotate($deg);
+   -webkit-transform: rotate($deg);
+   -moz-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin grow {
+      transition: width 1s ease-in-out;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+}
+
+body {
+  background: #273746;
+}
+
+.container {
+  position: relative;
+  height: 600px;
+  width: 800px;
+  margin: 20px auto;
+}
+
+.graph, .pika-bar, .bulb-bar, .char-bar, .jig-bar, .pika, .eye-left, .eye-right, .nose, .bulb, .bulb-top, .char, .jig, .hair {
+  position: absolute;
+}
+
+.graph {
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.pika-bar, .char-bar, .jig-bar, .bulb-bar {
+  left: 10.5%;
+  height: 15%;
+  @include grow;
+}
+
+.pika-bar {
+  width: 50%;
+  top: 10%;
+  background: $pika-yellow; 
+  @include grow;
+}
+
+.pika-bar:hover {
+  width: 70%;
+}
+
+.pika {
+  top: 10%;
+  left: 10.5%;
+  height: 15%;
+  width: 15%;
+  background: $pika-yellow;
+  &:before, &:after {
+    //cheeks
+    position: absolute;
+    top: 50%;
+    content: '';
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    background: lighten($pika-red, 20%);
+  }
+  &:before {
+    left: 10%;
+  }
+  &:after {
+    right: 10%;
+  }
+  .eye-left, .eye-right {
+    top: 25%;
+    height: 15%;
+    width: 10%;
+    border-radius: 50%;
+    background: $black;
+  }
+  .eye-left {
+    left: 15%;
+  }
+  .eye-right {
+    right: 15%;
+  }
+  .nose {
+    top: 50%;
+    left: 45%;
+    height: 3%;
+    width: 8%;
+    border-radius: 50%;
+    background: $black;
+  }
+}
+
+.char-bar {
+  width: 40%;
+  top: 31%;
+  background: $char-orange;
+}
+
+.char-bar:hover {
+  width: 75%;
+  @include grow;
+}
+
+.char {
+  top: 31%;
+  left: 10.5%;
+  height: 15%;
+  width: 15%;
+  background: $char-orange;
+  &:before, &:after {
+    //nose
+    position: absolute;
+    content: '';
+    height: 5%;
+    width: 2%;
+    top: 60%;
+    border-radius: 50%;
+    background: $black;
+  }
+  &:before {
+    left: 45%;
+    @include rotate(-30deg);
+  }
+  &:after {
+    right: 45%;
+    @include rotate(30deg);
+  }
+  .eye-left, .eye-right {
+    top: 30%;
+    height: 35%;
+    width: 20%;
+    background: white;
+    border-radius: 50% 50% 30% 30%;
+    overflow: hidden;
+    &:before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 90%;
+      background: $black;
+      border-radius: 50%;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      top: 10%;
+      height: 80%;
+      width: 60%;
+      background: $char-teal; 
+      border-radius: 50%;
+    }
+  }
+  .eye-left {
+    left: 15%;
+    &:before {
+      left: 20%;
+    }
+    &:after {
+      left: 60%;
+    }
+  }
+  .eye-right {
+    right: 15%;
+    &:before {
+      right: 20%;
+    }
+    &:after {
+      right: 60%;
+    }
+  }
+}
+
+.bulb-bar {
+  width: 45%;
+  top: 53%;
+  background: $bulb-blue;
+}
+
+.bulb-bar:hover {
+  width: 65%;
+  @include grow;
+}
+
+.bulb {
+  top: 53%;
+  left: 10.5%;
+  height: 15%;
+  width: 15%;
+  background: $bulb-blue;
+  &:before, &:after {
+    //nose
+    position: absolute;
+    content: '';
+    height: 8%;
+    width: 2%;
+    top: 60%;
+    border-radius: 50%;
+    background: $black;
+  }
+  &:before {
+    left: 45%;
+    @include rotate(-30deg);
+  }
+  &:after {
+    right: 45%;
+    @include rotate(30deg);
+  }
+  .eye-left, .eye-right {
+    top: 25%;
+    height: 35%;
+    width: 25%;
+    background: white;
+    border-top: 2px solid black;
+    overflow: hidden;
+    &:before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 90%;
+      background: $bulb-pink;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      top: 40%;
+      height: 45%;
+      width: 20%;
+      border-radius: 50%;
+      background: white;  
+    }
+  }
+  .eye-left {
+    left: 15%;
+    border-radius: 10px 60px 5px 5px;
+    &:before {
+      left: 30%;
+      border-radius: 50% 50% 0 20%;
+    }
+    &:after {
+      left: 60%;
+    }
+  }
+  .eye-right {
+    right: 15%;
+    border-radius: 60px 10px 5px 5px;
+    &:before {
+      right: 30%;
+      border-radius: 50% 50% 20% 0;
+    }
+    &:after {
+      right: 60%;
+    }
+  }
+}
+
+.bulb-top{
+  top: 49%;
+  left: 16%;
+  height: 10%;
+  width: 4%;
+  border-radius: 50%;
+  background: darken($bulb-green, 20%);
+  &:before, &:after {
+    position: absolute;
+    content: '';
+    top: 5%;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: $bulb-green;
+  }
+  &:before {
+    left: -40%;
+    @include rotate(-20deg);
+  }
+  &:after {
+    right: -40%;
+    @include rotate(20deg);
+  }
+}
+
+.jig-bar {
+  width: 30%;
+  top: 75%;
+  background: $jig-pink;
+}
+
+.jig-bar:hover {
+  width: 80%;
+  @include grow;
+}
+
+.jig {
+  top: 75%;
+  left: 10.5%;
+  height: 15%;
+  width: 15%;
+  background: $jig-pink;
+  .eye-left, .eye-right {
+    top: 35%;
+    height: 30%;
+    width: 25%;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    &:before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 90%;
+      background: $jig-blue;
+      border-radius: 50%;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      top: 20%;
+      height: 40%;
+      width: 30%;
+      background: white; 
+      border-radius: 50%;
+    }
+  }
+  .eye-left {
+    left: 15%;
+    &:before {
+      left: 20%;
+    }
+    &:after {
+      left: 60%;
+    }
+  }
+  .eye-right {
+    right: 15%;
+    &:before {
+      right: 20%;
+    }
+    &:after {
+      right: 60%;
+    }
+  }
+  .hair {
+    background: darken($jig-pink, 5%);
+    top: -20%;
+    left: 30%;
+    height: 40%;
+    width: 30%;
+    border-radius: 50%;
+    border: 2px solid $dark-gray;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 40%;
+      left: 30%;
+      height: 60%;
+      width: 60%;
+      border-radius: 50%;
+      background: darken($jig-pink, 6%);
+      border: 2px solid $dark-gray;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      top: 51.3%;
+      left: 10%;
+      height: 50%;
+      width: 80%;
+      border-radius: 50%;
+      background: darken($jig-pink, 6%);
+      @include rotate(23deg);
+    }
+  }
+}
