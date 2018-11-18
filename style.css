@@ -1,17 +1,4 @@
-/* body{
-  background-color: black;
-  height: 500px;
-  width: 800px;
-  margin-top:30px;
-  margin-bottom: 30px;
-  padding: 20px;
-  color: white;
-  background: url('pokedexbackgd1.jpg') center #333 no-repeat;
-  background-size: cover;
-  color: white;
-  text-shadow: 0px 0px 5px #000;
-  opacity: 1;
-} */
+
 
 html {
   /* overflow-x: hidden; */
@@ -292,46 +279,3 @@ body {
 }
 
   
-/* #content:before, 
-#content:after, 
-#content>:last-child:before, 
-#content>:last-child:after {
-    position: absolute;
-    width: 60px; 
-    height: 50px;
-    border-color: white; 
-    border-style: solid;
-    content: ' ';
-}
- 
-#content:before {
-    top: 10px;
-    left: 10px;
-    border-width: 1px 0 0 1px
-}
- 
-#content:after {
-    top: 10px;
-    right: 10px;
-    border-width: 1px 1px 0 0
-}
- 
-#content>:last-child:before {
-    bottom: 10px;
-    right: 10px;     
-    border-width: 0 1px 1px 0
-}
- 
-#content>:last-child:after {
-    bottom: 10px;
-    left: 10px;
-    border-width: 0 0 1px 1px
-} */
-
-/* .header {
-  display: flex;
-  align-items: center;
-  font-size: 2em;
-  color: white;
-  background-color: white;
-} */

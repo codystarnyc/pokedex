@@ -272,10 +272,11 @@ function showPalkia(){
     function showGraph1(){
       mySlide=setTimeout(function() {
         document.getElementById('pokecard').classList.add('hidden');
-        // document.getElementById('wrap').classList.add('hidden');
         document.getElementById('slide').classList.remove('hidden');
         document.getElementById('slide').classList.add('animated');
-        document.getElementById('slide').classList.add('zoomInUp')
+        document.getElementById('slide').classList.add('zoomInUp');
+        document.getElementsByClassName("pika-bar").classList.remove("pika-bar");
+        document.getElementsByClassName("pika-bar").classList.add("pika-barMew");
         // document.getElementById('wrap1').classList.remove('hidden');
         // document.getElementById('slide').classList.remove('hidden');
         // document.getElementById('slide').classList.add('animated');
