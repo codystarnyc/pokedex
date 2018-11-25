@@ -50,17 +50,18 @@ function capitalize(string) {
 
 class Trainer {
   constructor() {
-    this.pokes = {};
+    this.pokes = [];
   }
-
+//accepts no parameters and returns an array of pokemon objects
   all() {
     let allPokes = [];
     for (let poke in this.pokes) {
       allPokes.push(this.pokes[poke]);
     }
+    console.log(allPokes)
     return allPokes;
   }
-
+ //accetps 1 parameter and returns a pokemon object for the pokemon if found!
   get(name) {
     for (let poke in this.pokes) {
       if (this.pokes[poke]['species'] == name || this.pokes[poke]['number'] == name) {
@@ -97,6 +98,7 @@ class Pokemon {
     this.flavorText = undefined;
     this.cry = "cries/" + number + ".ogg";
     this.caught = false;
+    bald_eagle.pokes.push(this);
   }
 
 
@@ -110,9 +112,9 @@ class Pokemon {
   }
 }
 
-  function fetchPokemon(userEntry) {
+  function fetchPokemon(poke) {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + userEntry + "/", true);
+    xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + poke + "/", true);
     xhttp.send();
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
@@ -125,6 +127,16 @@ class Pokemon {
         document.getElementById("hp").innerHTML= "HP: " + data['stats'][5]['base_stat'];
         document.getElementById("defense").innerHTML= "Defense: " + data['stats'][3]['base_stat'];
         document.getElementById("attack").innerHTML= "Attack: " + data['stats'][4]['base_stat'];
+        setTimeout(function() {
+          if (data.abilities[2] !== undefined) {
+            document.getElementById("showabilities").innerHTML = "ABILITIES: " + data.abilities[0].ability.name.toUpperCase() + ", " + data.abilities[1].ability.name.toUpperCase() + ", " + data.abilities[2].ability.name.toUpperCase();
+          } else if (data.abilities[1] !== undefined) {
+            document.getElementById("showabilities").innerHTML = "ABILITIES: " + data.abilities[0].ability.name.toUpperCase() + ", " + data.abilities[1].ability.name.toUpperCase();
+          } else {
+            document.getElementById("showabilities").innerHTML = "ABILITY:  " + data.abilities[0].ability.name.toUpperCase();
+          }
+          
+          }, 8000);
       };
     };
   }
@@ -135,10 +147,7 @@ class Pokemon {
 
 
 // function getPalkia (){
-//    document.getElementById("speed").innerHTML= "Speed: " + Pokemon.speed;
-//    document.getElementById("hp").innerHTML= "HP: " + Pokemon.hp;
-//    document.getElementById("defense").innerHTML= "Defense: " + Pokemon.hp;
-//    document.getElementById("attack").innerHTML= "Attack: " + Pokemon.attack;
+ 
 // }
   //  document.getElementById("id").innerHTML= "Id: " + Pokemon.id;
 
